@@ -38,6 +38,7 @@ body {
     --font-size-six: 18px;
     --font-size-seven: 35px;
     --font-size-eight: 30px;
+    --font-size-nine: 90px;
 }
 
 .nav-container {
@@ -81,7 +82,7 @@ body {
 
 @media (max-width: 992px) {
     #navbar-logo {
-        margin: 0 10px;
+        margin: 0 20px;
         height: 30px;
     }
 }
@@ -192,11 +193,16 @@ body {
     height: 100vh;
 }
 
+/* @media screen and (max-width: 768px) {
+    .banner {
+        padding: 120px 0;
+    }
+} */
+
 .banner_aplication {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    padding-left: 40px;
 }
 
 .banner_aplication__headingOne, .banner_aplication__headingTwo, .banner_aplication__headingThree {
@@ -206,26 +212,25 @@ body {
 }
 
 .banner_aplication__headingOne {
-    font-size: 100pt;
+    font-size: var(--font-size-nine);
     font-weight: bold;
     padding-top: 100px;
 }
 
 .banner_aplication__headingTwo {
-    font-size: 54pt;
+    font-size: var(--font-size-three);
     font-weight: normal;
-    padding-top: -30px;
 }
 
 .banner_aplication__headingThree {
-    font-size: 18pt;
+    font-size: var(--font-size-two);
     padding: 10px 0 0 0;
     font-weight: normal;
 }
 
 .banner_aplication__page {
     display: inline-block;
-    font-size: 18pt;
+    font-size: var(--font-size-two);
     line-height: 38px;
     padding: 0;
     text-decoration: none;
@@ -267,23 +272,17 @@ body {
         padding: 50px 0px;
     }
     .banner_aplication__headingOne {
-        font-size: 40pt;
         margin-top: 80px;
     }
     .banner_aplication__headingTwo {
-        font-size: 30pt;
-        margin-top: 2pt;
+        margin-top: 5px;
     }
     .banner_aplication__headingThree {
-        font-size: 15pt;
         margin-top: 0;
     }
     .banner_aplication__headingThree h3::after {
         margin: 15px 0;
         max-width: 200px;
-    }
-    .banner_aplication__page {
-        font-size: 15pt;
     }
 }
 
@@ -331,15 +330,14 @@ body {
     color: var(--color-primary);
     font-size: var(--font-size-two);
     font-weight: 200;
-    text-align: center;
+    text-align: left;
     letter-spacing: 1px;
-    margin-top: 0;
+    padding: 0 10px;
 }
 
 @media screen and (max-width: 768px) {
     .mobile_wrapper__paragraph {
         font-size: var(--font-size-one);
-        text-align: center;
     }
 }
 
@@ -393,7 +391,6 @@ body {
     .mobile_telephone__list-items {
         font-size: var(--font-size-one);
         margin: 10px;
-     
     }
 }
 
@@ -418,12 +415,12 @@ body {
     font-weight: 200;
     text-align: left;
     letter-spacing: 1px;
+    padding: 0 10px;
 }
 
 @media screen and (max-width: 768px) {
     .mobile_training__paragraph {
         font-size: var(--font-size-one);
-        text-align: center;
     }
 }
 
@@ -431,13 +428,13 @@ body {
     .mobile_training__paragraph {
         font-size: var(--font-size-one);
         margin: 10px;
-        padding: 60px 0 0;
+        padding: 60px 10px 0;
     }
 }
 
 .occasion {
     display: flex;
-    padding: 60px 0;
+    padding: 20px 0;
 }
 
 .occasion_wrapper {
@@ -460,7 +457,7 @@ body {
 }
 
 .occasion_wrapper__view-item-heading {
-    font-size: var(--font-size-three);
+    font-size: var(--font-size-eight);
     text-align: center;
     color: var(--color-primary);
     padding: 20px 0;
@@ -547,7 +544,7 @@ body {
 
 .we_gallery__wrapper-photo h1 {
     font-weight: normal;
-    font-size: 18pt;
+    font-size: var(--font-size-two);
     color: var(--color-third);
     text-align: left;
     margin-bottom: 0;
@@ -556,7 +553,7 @@ body {
 
 .we_gallery__wrapper-photo h2 {
     font-weight: normal;
-    font-size: 15pt;
+    font-size: var(--font-size-one);
     color: var(--color-primary);
     text-align: left;
     margin-bottom: 20px;
@@ -584,10 +581,10 @@ body {
         background-color: var(--color-fourth);
     }
     .we_gallery__wrapper-photo h1 {
-        font-size: 13pt;
+        font-size: var(--font-size-six);
     }
     .we_gallery__wrapper-photo h2 {
-        font-size: 10pt;
+        font-size: var(--font-size-five);
     }
 }
 
@@ -611,14 +608,14 @@ body {
     color: var(--color-primary);
     font-size: var(--font-size-two);
     font-weight: 200;
-    text-align: center;
+    text-align: left;
     padding: 80px 0 0;
 }
 
 @media screen and (max-width: 768px) {
     .words_training {
         color: var(--color-primary);
-        font-size: 15pt;
+        font-size: var(--font-size-six);
         font-weight: normal;
         text-align: justify;
         margin: 50px 10px;
